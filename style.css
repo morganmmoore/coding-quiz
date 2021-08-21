@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+  p {
+    text-align: center;
+    width: 50%;
+    margin: auto;  
+  }
+
+  form {
+    text-align: center;
+  }
+
+  #scoreDiv {
+    display: none;
+  }
+  
+  .scoreButton {
+    font-size: 15px;
+    float: left;
+    color: darkslateblue;
+  }
+  
+  .win-loss-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .start-button {
+    background: darkslateblue;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 0.21px; 
+    max-width: 255px; 
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    border-bottom:30px #879274;
+  }
+  
+   main {
+    width: 50%;
+    margin: auto;
+    padding: 10px; 
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  } 
+  
+  section {
+    margin-top: 30px;
+    margin-bottom: -200px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .word-guess {
+    width: 55vw;
+    height: 400px;
+  }
+  
+  .results {
+    width: 30vw;
+    height: 400px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+}
+
+#showBtns {
+  visibility: hidden;
+  text-align: center;
+}
+
+#questionText {
+  width: 75%;
+}
+
+#question {
+  color: darkslateblue;
+  width: 100%;
+}
+
+#questionText {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+ 
+#alternatives0, #alternatives1, #alternatives2, #alternatives3 {
+    width: 250px;
+    font-size: 20px;
+    color: darkslateblue;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+ 
+#alternatives0:hover, #alternatives1:hover, #alternatives2:hover, #alternatives3:hover {
+    cursor: pointer;
+    background-color: #01BBFF;
+}
+ 
+#alternatives0:focus, #alternatives1:focus, #alternatives2:focus, #alternatives3:focus {
+    outline: 0;
+}
+  
+  .card {
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .word-blanks {
+    line-height: 360px;
+  }
+  
+  .large-font {
+    font-size: 3.5em;
+    text-align:center;
+    color: darkslateblue;
+    font-weight: bold;
+  }
+
+  .reset-button {
+    background: darkslateblue;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 0.21px; 
+    max-width: 155px; 
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0;  
+  }
+  
+  .timer {
+    float: right;
+    height: 40px;
+    font-size: 25px;
+    padding-top: 0;
+    text-align: center;
+    background-color: white;
+    color: darkslateblue;
+  }
+  
+  @media screen and (max-width: 1183px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .word-guess,
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: white;
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }
+  
+  @media screen and (max-width: 504px) {
+    .large-font {
+      font-size: 2em;
+    }
+  
+    .scoreButton {
+      font-size: 12px;
+      width: 20ox;
+      
+    }
+   
+  }

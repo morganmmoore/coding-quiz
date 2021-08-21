@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TITLE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <header>
+      <div class= "card timer">
+        <div class = "timer-text">
+        <div class="timer-count">60 seconds remaining</div>
+      </div>
+    </div>
+    
+      <button class="scoreButton" data-bs-toggle="modal" data-bs-target="#exampleModal">View Highscores</button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Highscores</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="high-scores"></ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class= "large-font">Coding Quiz</div>
+
+    <main>
+      <section class="center">
+        <div id="question"><p id="questionText">Welcome to the coding quiz. You will be presented with ten multiple choice questions and will have 60 seconds to answer them. If you answer correctly, you will move to the next question. If you answer incorrectly, you will have 10 seconds deducted from your time and will move to the next question. Save your highscore at the end!</p></div>
+          <div class="buttons" id="showBtns">
+              <button id="alternatives0"><span id=choice0></span></button><br />
+              <button id="alternatives1"><span id=choice1></span></button><br />
+              <button id="alternatives2"><span id=choice2></span></button><br />
+              <button id="alternatives3"><span id=choice3></span></button><br />
+          </div>
+          
+          <div id="scoreDiv">
+            <form id="scoreForm">
+              <p><span id="score"></span></p>
+              <label for="initials">Enter Your Intials:</label>
+              <input type="text" id="initials"><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </section>
+    </main>
+
+    <!-- <button class="reset-button">Reset</button> -->
+
+    <button class="start-button" id="startbtn" onClick="this.style.visibility='hidden';">Start Quiz</button>
+
+    <script src="C:\Users\frogg\Quiz Homework\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  </body>
+</html>
